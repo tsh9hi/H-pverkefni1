@@ -12,62 +12,96 @@
 
 <body>
 
-  <h1>Vöruhúsið</h1>
-  <nav>
-    <ul>
-      <li><a href="index.html">FORSÍÐA</a></li>
-      <li><a href="pages/products.html">VÖRUR</a></li>
-      <li><a href="pages/course.html">NÁMSKEIÐ</a></li>
-      <li><a href="pages/staff.html">STARFSFÓLK</a></li>
-      <li><a href="pages/cart.html">Karfa (6)</a></li>
-    </ul>
-  </nav>
+  <header class="navigation navigation-header">
+    <h1 class="navigation__title">Vöruhúsið</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">FORSÍÐA</a></li>
+        <li><a href="pages/products.html">VÖRUR</a></li>
+        <li><a href="pages/course.html">NÁMSKEIÐ</a></li>
+        <li><a href="pages/staff.html">STARFSFÓLK</a></li>
+        <li><img src="img/cart.svg"><a href="pages/cart.html">Karfa (6)</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <h2>Allar vörurnar</h2>
-  <p>Vöruhúsið hefur allar þær vörur sem þig vantar fyrir klifrið.</p>
-  <p>Skoða vörur</p>
-  <img src="img/climbing-store.jpg" alt="Mynd af verslun" title="Mynd af verslun">
+  <main>
 
-  <h2>Besta starfsfólkið</h2>
-  <p>Starfsfólkið okkar hugsar vel um þig.</p>
-  <p>Kynnast starfsfólki</p>
-  <img src="img/team.jpg" alt="Mynd af höndum teymisins" title="Mynd af höndum teymisins">
+    <div class="grid">
 
-  <h3>Vöruflokkar</h3>
-  <ul>
-    <li><a>Nauðsynjavörur</a></li>
-    <li><a>Frábærar vörur</a></li>
-    <li><a>Ómissandi vörur</a></li>
-    <li><a>Ótrúlegar vörur</a></li>
-    <li><a>Magnaðar vörur</a></li>
-  </ul>
+      <div class="grid__col">
+        <div class="grid__row products-content">
+          <div class="text">
+            <h2>Allar vörurnar</h2>
+            <p>Vöruhúsið hefur allar þær vörur sem þig vantar fyrir klifrið.</p>
+          </div>
+          <p><input class="button" type="button" value="Skoða vörur"></p>
+        </div>
+        <div class="grid__row">
+          <img class="image" src="img/climbing-store.jpg" alt="Mynd af verslun" title="Mynd af verslun">
+        </div>
+      </div>
 
-  <h3>Vöruflokkar</h3>
-  <ul>
-    <li><a>Trylltar vörur</a></li>
-    <li><a>Geggjaðar vörur</a></li>
-    <li><a>Svakalegar vörur</a></li>
-    <li><a>Fáránlegar vörur</a></li>
-    <li><a>Klikkaðar vörur</a></li>
-  </ul>
+      <div class="grid__col">
+        <div class="grid__row">
+        <h2>Besta starfsfólkið</h2>
+        <p>Starfsfólkið okkar hugsar vel um þig.</p>
+        <p><input class="button" type="button" value="Kynnast starfsfólki"></p>
+        </div>
+        <div class="grid__row">
+          <img class="image" src="img/team.jpg" alt="Mynd af höndum teymisins" title="Mynd af höndum teymisins">
+        </div>
+      </div>
 
-  <h3>Námskeið</h3>
-  <ul>
-    <li><a>V0 - V1 námskeið</a></li>
-    <li><a>V2 - V4 námskeið</a></li>
-    <li><a>V5 - V7 námskeið</a></li>
-    <li><a>Fjallaklifur námskeið</a></li>
-  </ul>
+    </div>
 
-  <h3>Síður</h3>
-  <ul>
-    <li><a>Allar vörur</a></li>
-    <li><a>Starfsfólk</a></li>
-    <li><a>Námskeið</a></li>
-    <li><a>Karfa</a></li>
-  </ul>
+  </main>
 
-  <p>© 2018 Vöruhúsið</p>
+  <footer class="navigation navigation-footer">
+    <div class="navigation__products-first">
+      <h3>Vöruflokkar</h3>
+      <ul>
+        <li><a>Nauðsynjavörur</a></li>
+        <li><a>Frábærar vörur</a></li>
+        <li><a>Ómissandi vörur</a></li>
+        <li><a>Ótrúlegar vörur</a></li>
+        <li><a>Magnaðar vörur</a></li>
+      </ul>
+    </div>
+
+    <div class="navigation__products-second">
+      <h3>Vöruflokkar</h3>
+      <ul>
+        <li><a>Trylltar vörur</a></li>
+        <li><a>Geggjaðar vörur</a></li>
+        <li><a>Svakalegar vörur</a></li>
+        <li><a>Fáránlegar vörur</a></li>
+        <li><a>Klikkaðar vörur</a></li>
+      </ul>
+    </div>
+
+    <div class="navigation__courses">
+      <h3>Námskeið</h3>
+      <ul>
+        <li><a>V0 - V1 námskeið</a></li>
+        <li><a>V2 - V4 námskeið</a></li>
+        <li><a>V5 - V7 námskeið</a></li>
+        <li><a>Fjallaklifur námskeið</a></li>
+      </ul>
+    </div>
+
+    <div class="navigation__pages">
+      <h3>Síður</h3>
+      <ul>
+        <li><a>Allar vörur</a></li>
+        <li><a>Starfsfólk</a></li>
+        <li><a>Námskeið</a></li>
+        <li><a>Karfa</a></li>
+      </ul>
+    </div>
+
+    <p class="copyright">© 2018 Vöruhúsið</p>
+  </footer>
 
 </body>
 
