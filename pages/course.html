@@ -1,52 +1,78 @@
 <!doctype html>
 <html lang="is">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Vöruhúsið</title>
 
-    <link rel="stylesheet" href="grid.css">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-Námskeið
-Prílihúsið býður upp á fjölbreytt námskeið fyrir byrjendur og lengra komna. Námskeiðin eru kennd af engri annarri en Karítas Pétursdóttir. Fyrir fólk á öllum aldri. Skráðu þig núna!
-Mynd af Prílihúsinu
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vöruhúsið</title>
 
-Almennar upplýsingar
-Nafn:
-Heimilisfang:
-Aldur:
-Námskeið:
-	V0 - V1
-	V2 - V4
-	V5 - V7
-	Krakkanámskeið
-	Fjallaklifur
+  <link rel="stylesheet" href="grid.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-Greiðsluupplýsingar
-Kortanúmer:
-Korthafi:
-Gildistími:
-Mán
-	01
-	02
-	03
-	04
-	05
-	06
-	07
-	08
-	09
-	10
-	11
-	12
-Ár
-	2019
-	2020
-	2021
-	2022
+<body>
 
-Skrá
-  </body>
+  <h2>Námskeið</h2>
+  <p>Prílihúsið býður upp á fjölbreytt námskeið fyrir byrjendur og lengra komna. Námskeiðin eru kennd af engri annarri
+    en
+    Karítas Pétursdóttur. Fyrir fólk á öllum aldri. Skráðu þig núna!</p>
+  <img src="../img/climbing-gym.jpg" alt="Mynd af Prílihúsinu" title="Mynd af Prílihúsinu">
+
+  <h2>Almennar upplýsingar</h2>
+
+  <p><label for="nafn">Nafn:</label>
+    <input type="text" name="nafn" id="nafn"></p>
+
+  <p><label for="heimilisfang">Heimilisfang:</label>
+    <input type="text" name="heimilisfang" id="heimilisfang"></p>
+
+  <p><label for="aldur">Aldur:</label>
+    <input type="text" name="aldur" id="aldur"></p>
+
+  <p><label for="námskeið">Námskeið:</label>
+
+    <select name="námskeið" id="námskeið">
+      <option selected value="v0-v1">V0 - V1</option>
+      <option value="v2-v4">V2 - V4</option>
+      <option value="v5-v7">V5 - V7</option>
+      <option value="krakkanámskeið">Krakkanámskeið</option>
+      <option value="fjallaklifur">Fjallaklifur</option>
+    </select></p>
+
+  <h2>Greiðsluupplýsingar</h2>
+  <p><label for="kortanúmer">Kortanúmer:</label>
+    <input type="text" name="kortanúmer" id="kortanúmer"></p>
+
+  <p><label for="korthafi">Korthafi:</label>
+    <input type="text" name="korthafi" id="korthafi"></p>
+
+  <p><label for="gildistími">Gildistími:</label>
+
+    <label for="mán">Mán</label>
+    <select>
+      <option selected value="01">01</option>
+      <option value="02">02</option>
+      <option value="03">03</option>
+      <option value="04">04</option>
+      <option value="05">05</option>
+      <option value="06">06</option>
+      <option value="07">07</option>
+      <option value="08">08</option>
+      <option value="09">09</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    </select>
+
+    <label for="ár">Ár</label>
+    <select>
+      <option selected value="2019">2019</option>
+      <option value="2020">2020</option>
+      <option value="2021">2021</option>
+      <option value="2022">2022</option>
+    </select></p>
+
+  <p><input type="button" value="Skrá"></p>
+</body>
+
 </html>

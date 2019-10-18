@@ -1,69 +1,87 @@
 <!doctype html>
 <html lang="is">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Vöruhúsið</title>
 
-    <link rel="stylesheet" href="grid.css">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vöruhúsið</title>
 
-Vörur í körfu
+  <link rel="stylesheet" href="grid.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-Bakpoki
-Þú getur geymt allt sem þú þarft fyrir klifrið í þessum bakpoka.
+<body>
+
+  <h2>Vörur í körfu</h2>
+
+  <img src="../img/Backpack.jpg" alt="Mynd af bakpoka" title="Mynd af bakpoka">
+  <h2>Bakpoki</h2>
+  <p>Þú getur geymt allt sem þú þarft fyrir klifrið í þessum bakpoka.</p>
 
 
-49.900 kr.-
-Fjöldi:
-2
-Uppfæra
-Eyða úr körfu
+  <h3>49.900 kr.-</h3>
+  <p><label for="fjöldi_bakpoki">Fjöldi:</label><br>
+    <input type="text" name="bakpoki" id="pakpoki" value=" 2">
 
-Kalkpoki
-Kalkaðu hendurnar áður en þú verður kalkaður í hausnum.
+    <input type="button" value="Uppfæra">
+    <input type="button" value="Eyða úr körfu"></p>
 
-4.900 kr.-
-Fjöldi:
-4
-Uppfæra
-Eyða úr körfu
+  <img src="../img/chalkbag.jpg" alt="Mynd af kalkpoka" title="Mynd af kalkpoka">
+  <h2>Kalkpoki</h2>
+  <p>Kalkaðu hendurnar áður en þú verður kalkaður í hausnum.</p>
 
-Sendingarupplýsingar
-Nafn:
+  <h3>4.900 kr.-</h3>
+  <p><label for="fjöldi_kalkpoki">Fjöldi:</label><br>
+    <input type="text" name="kalkpoki" id="kalkpoki" value=" 4">
 
-Heimilisfang:
+    <input type="button" value="Uppfæra">
+    <input type="button" value="Eyða úr körfu"></p>
 
-Póstnúmer:
+  <h2>Sendingarupplýsingar</h2>
+  <p><label for="nafn">Nafn:</label>
+    <input type="text" name="nafn" id="nafn"></p>
 
-Greiðsluupplýsingar
-Kortanúmer:
+  <p><label for="heimilisfang">Heimilisfang:</label>
+    <input type="text" name="heimilisfang" id="heimilisfang"></p>
 
-Korthafi:
+  <p><label for="póstnúmer">Póstnúmer:</label>
+    <input type="text" name="póstnúmer" id="póstnúmer"></p>
 
-Gildistími:
-Mán
-	01
-	02
-	03
-	04
-	05
-	06
-	07
-	08
-	09
-	10
-	11
-	12
-Ár
-	2019
-	2020
-	2021
-	2022
+  <h2>Greiðsluupplýsingar</h2>
+  <p><label for="kortanúmer">Kortanúmer:</label>
+    <input type="text" name="kortanúmer" id="kortanúmer"></p>
 
-Kaupa
+  <p><label for="korthafi">Korthafi:</label>
+    <input type="text" name="korthafi" id="korthafi"></p>
+
+  <p><label for="gildistími">Gildistími:</label>
+
+    <label for="mán">Mán</label>
+    <select>
+      <option value="01">01</option>
+      <option value="02">02</option>
+      <option value="03">03</option>
+      <option value="04">04</option>
+      <option value="05">05</option>
+      <option value="06">06</option>
+      <option value="07">07</option>
+      <option value="08">08</option>
+      <option value="09">09</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    </select>
+
+    <label for="ár">Ár</label>
+    <select>
+      <option value="2019">2019</option>
+      <option value="2020">2020</option>
+      <option value="2021">2021</option>
+      <option value="2022">2022</option>
+    </select></p>
+
+  <p><input type="button" value="Kaupa"></p>
 
 </body>
+
 </html>
